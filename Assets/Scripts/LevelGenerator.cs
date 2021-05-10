@@ -7,8 +7,8 @@ public class LevelGenerator : MonoBehaviour
     public GameObject platformPrefab;
     public int numberOfPlatforms;
     public float levelWidth = Screen.width;
-    public float minY = .8f;
-    public float maxY = 2f;
+    public float minY = .5f;
+    public float maxY = 1.5f;
 
     public Transform playerTransform;
     void Start()

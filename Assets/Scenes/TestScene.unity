@@ -154,7 +154,7 @@ MonoBehaviour:
   numberOfPlatforms: 200
   levelWidth: 4
   minY: 0.5
-  maxY: 2.5
+  maxY: 1.5
   playerTransform: {fileID: 550857435}
 --- !u!4 &89796601
 Transform:
@@ -347,7 +347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550857433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -1.12, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -413,6 +413,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 8
+  cameraTransform: {fileID: 519420032}
+  playerTransform: {fileID: 550857435}
 --- !u!1 &1093110137 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3868325758394878759, guid: 856736b81eed84541a08ca03fdba86cd,
@@ -514,16 +516,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3868325758394878754, guid: 856736b81eed84541a08ca03fdba86cd,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3868325758394878754, guid: 856736b81eed84541a08ca03fdba86cd,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3868325758394878754, guid: 856736b81eed84541a08ca03fdba86cd,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.01
       objectReference: {fileID: 0}
@@ -571,11 +563,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3868325758394878755, guid: 856736b81eed84541a08ca03fdba86cd,
-        type: 3}
-      propertyPath: jumpForce
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3868325758394878759, guid: 856736b81eed84541a08ca03fdba86cd,
         type: 3}
