@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
@@ -13,6 +11,7 @@ public class Player : MonoBehaviour
     float movement = 0f;
     public Transform cameraTransform;
     public Transform playerTransform;
+    public SpriteRenderer sp;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,6 +24,16 @@ public class Player : MonoBehaviour
         if(playerTransform.position.y < cameraTransform.position.y - 4.2)
         {
             SceneManager.LoadScene("Game Over");
+        }
+
+        sp = GetComponent<SpriteRenderer>();
+        if (movement < 0)
+        {
+            sp.flipX = true;
+        }
+        else if(movement > 0)
+        {
+            sp.flipX = false;
         }
     }
 
