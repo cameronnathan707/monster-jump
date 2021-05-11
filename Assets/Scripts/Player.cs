@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     public Transform cameraTransform;
     public Transform playerTransform;
     public SpriteRenderer sp;
+
+    const float EDGE_POS = 2.78f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,15 +28,34 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene("Game Over");
         }
+        spriteDirection();
+        wrap();
+    }
 
+    void spriteDirection()
+    {
         sp = GetComponent<SpriteRenderer>();
         if (movement < 0)
         {
             sp.flipX = true;
         }
-        else if(movement > 0)
+        else if (movement > 0)
         {
             sp.flipX = false;
+        }
+    }
+
+    void wrap()
+    {
+        if(playerTransform.position.x > EDGE_POS)
+        {
+            Vector3 newPos = new Vector3(-EDGE_POS, playerTransform.position.y, playerTransform.position.z);
+            playerTransform.position = newPos;
+        }
+        else if(playerTransform.position.x < -EDGE_POS)
+        {
+            Vector3 newPos = new Vector3(EDGE_POS, playerTransform.position.y, playerTransform.position.z);
+            playerTransform.position = newPos;
         }
     }
 

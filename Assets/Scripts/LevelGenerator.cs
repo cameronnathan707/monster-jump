@@ -10,6 +10,7 @@ public class LevelGenerator : MonoBehaviour
     public float minY = .5f;
     public float maxY = 1.5f;
 
+
     public Transform playerTransform;
     void Start()
     {
@@ -21,4 +22,6 @@ public class LevelGenerator : MonoBehaviour
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
     }
+
+   
 }

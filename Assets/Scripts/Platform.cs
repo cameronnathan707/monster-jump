@@ -5,6 +5,10 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     public float jumpForce = 10f;
+
+    public Transform cameraTransform;
+    public Transform platformTransform;
+    const float CAMERA_B_EDGE = 4.57f;
     void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -18,6 +22,13 @@ public class Platform : MonoBehaviour
                 rb.velocity = velocity;
             }
         }
-        
+    }
+
+    void Update()
+    {
+        if (platformTransform.position.y < cameraTransform.position.y - CAMERA_B_EDGE)
+        {
+            Destroy(gameObject);
+        }
     }
 }
