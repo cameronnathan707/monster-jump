@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-    public GameObject platformPrefab;
+    public GameObject MainPatform;
+    public GameObject SpringPatform;
+    public GameObject CannonPatform;
     public int numberOfPlatforms;
     public float levelWidth = Screen.width;
     public float minY = .5f;
@@ -19,7 +21,20 @@ public class LevelGenerator : MonoBehaviour
         {
             spawnPosition.y += Random.Range(minY, maxY);
             spawnPosition.x = Random.Range(-levelWidth/2, levelWidth/2);
-            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
+
+            switch (Random.Range(0, 20))
+            {
+                case 0:
+                    Instantiate(SpringPatform, spawnPosition, Quaternion.identity);
+                    break;
+                case 1:
+                    Instantiate(CannonPatform, spawnPosition, Quaternion.identity);
+                    break;
+                default:
+                    Instantiate(MainPatform, spawnPosition, Quaternion.identity);
+                    break;
+            }
+                  
         }
     }
 
