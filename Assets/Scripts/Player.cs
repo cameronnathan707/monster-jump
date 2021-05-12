@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sp = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -34,7 +35,7 @@ public class Player : MonoBehaviour
 
     void spriteDirection()
     {
-        sp = GetComponent<SpriteRenderer>();
+        
         if (movement < 0)
         {
             sp.flipX = true;

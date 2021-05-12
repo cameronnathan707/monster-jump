@@ -4,19 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEditor;
 
-public class MainMenu : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
-    public void PlayGame()
+    public void Retry()
     {
         SceneManager.LoadScene(Constants.GAME_SCENE);
     }
 
+    public void Menu()
+    {
+        SceneManager.LoadScene(Constants.MENU_SCENE);
+    }
+
     public void Quit()
     {
-        Debug.Log("Application Succesfully Shut Down!");
+        Debug.Log("Game Shut Down");
         Application.Quit();
         #if UNITY_EDITOR
-            EditorApplication.isPlaying = false;
+                EditorApplication.isPlaying = false;
         #endif
     }
 }
