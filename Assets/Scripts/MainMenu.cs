@@ -6,7 +6,7 @@ using UnityEditor;
 
 public class MainMenu : MonoBehaviour
 {
-    const string GAME_SCENE = "TestScene";
+    const string GAME_SCENE = "Game";
     public void PlayGame()
     {
         SceneManager.LoadScene(GAME_SCENE);
@@ -19,15 +19,5 @@ public class MainMenu : MonoBehaviour
         #if UNITY_EDITOR
             EditorApplication.isPlaying = false;
         #endif
-    }
-
-    public void ToSettings()
-    {
-
-    }
-
-    public void ToShop()
-    {
-
     }
 }
