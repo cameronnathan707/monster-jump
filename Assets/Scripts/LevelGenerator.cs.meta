@@ -3,7 +3,12 @@ guid: b0c51fd5772021f47a69cee859b39e0c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - MainPatform: {fileID: 5377808667160396536, guid: 27255450753b720499a5ce030e880200,
+      type: 3}
+  - SpringPatform: {instanceID: 0}
+  - CannonPatform: {instanceID: 0}
+  - playerTransform: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +7,7 @@ public class LevelGenerator : MonoBehaviour
     public GameObject MainPatform;
     public GameObject SpringPatform;
     public GameObject CannonPatform;
+    public GameObject CoinPlatform;
     public int numberOfPlatforms;
     public float levelWidth = Screen.width;
     public float minY = .5f;
@@ -29,6 +30,9 @@ public class LevelGenerator : MonoBehaviour
                     break;
                 case 1:
                     Instantiate(CannonPatform, spawnPosition, Quaternion.identity);
+                    break;
+                case 2:
+                    Instantiate(CoinPlatform, spawnPosition, Quaternion.identity);
                     break;
                 default:
                     Instantiate(MainPatform, spawnPosition, Quaternion.identity);
