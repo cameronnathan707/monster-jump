@@ -272,7 +272,7 @@ PrefabInstance:
     - target: {fileID: 8324261982553617487, guid: 1aa0d2b5f31766a42b9f26e13c0e2cfc,
         type: 3}
       propertyPath: type
-      value: MainPatform
+      value: MainPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 8324261982553617487, guid: 1aa0d2b5f31766a42b9f26e13c0e2cfc,
         type: 3}
@@ -1252,7 +1252,7 @@ PrefabInstance:
     - target: {fileID: 4705749931730566973, guid: 89aa2a0922a617f40a7ff0267e804788,
         type: 3}
       propertyPath: type
-      value: SpringPatform
+      value: SpringPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 4705749931730566973, guid: 89aa2a0922a617f40a7ff0267e804788,
         type: 3}
@@ -1927,7 +1927,7 @@ PrefabInstance:
     - target: {fileID: 4173752351614356565, guid: 288a96bb0edbfd74ea2eff7ab03723c8,
         type: 3}
       propertyPath: type
-      value: CannonPatform
+      value: CannonPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 4173752351614356565, guid: 288a96bb0edbfd74ea2eff7ab03723c8,
         type: 3}
@@ -2021,7 +2021,7 @@ PrefabInstance:
     - target: {fileID: 6049811878843788715, guid: 87bc266bf8c31974ea2df6c71d2d2a15,
         type: 3}
       propertyPath: type
-      value: CoinPlatform
+      value: MainPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 6049811878843788715, guid: 87bc266bf8c31974ea2df6c71d2d2a15,
         type: 3}
@@ -2031,7 +2031,7 @@ PrefabInstance:
     - target: {fileID: 7958743961587535468, guid: 87bc266bf8c31974ea2df6c71d2d2a15,
         type: 3}
       propertyPath: m_TagString
-      value: Coins
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8244740067529131951, guid: 87bc266bf8c31974ea2df6c71d2d2a15,
         type: 3}
