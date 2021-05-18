@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
         if(other.gameObject.CompareTag("Coins"))
         {
             Destroy(other.gameObject);
+            SoundControlScript.PlaySound("CoinPlatform");
         }
     }
 

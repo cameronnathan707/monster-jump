@@ -24,13 +24,13 @@ public class SoundControlScript : MonoBehaviour
     {
         switch (clip)
         {
-            case "MainPatform":
+            case "MainPlatform":
                 AudioSrc.PlayOneShot(MainPatform);
                 break;
-            case "SpringPatform":
+            case "SpringPlatform":
                 AudioSrc.PlayOneShot(SpringPatform);
                 break;
-            case "CannonPatform":
+            case "CannonPlatform":
                 AudioSrc.PlayOneShot(CannonPatform);
                 break;
             case "CoinPlatform":
