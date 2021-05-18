@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2594866132614379990}
   - component: {fileID: 2594866132614379991}
-  - component: {fileID: 2594866132614379989}
+  - component: {fileID: -972861154923245478}
   m_Layer: 0
   m_Name: Background Music
   m_TagString: Untagged
@@ -128,7 +128,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2594866132614379989
+--- !u!114 &-972861154923245478
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
