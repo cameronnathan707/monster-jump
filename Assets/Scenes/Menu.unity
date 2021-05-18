@@ -2911,6 +2911,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -972861154923245478, guid: 28ba6f02725f4734896ca097f04b6622,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 2098834853}
+    - target: {fileID: -972861154923245478, guid: 28ba6f02725f4734896ca097f04b6622,
+        type: 3}
+      propertyPath: music1
+      value: 
+      objectReference: {fileID: 8300000, guid: c5d2143036b6934419c07484b2863479, type: 3}
     - target: {fileID: 2594866132614379984, guid: 28ba6f02725f4734896ca097f04b6622,
         type: 3}
       propertyPath: m_Name
@@ -2980,6 +2990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Volume
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594866132614379991, guid: 28ba6f02725f4734896ca097f04b6622,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ba6f02725f4734896ca097f04b6622, type: 3}
@@ -4386,6 +4401,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2086539315}
   m_CullTransparentMesh: 0
+--- !u!82 &2098834853 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2594866132614379991, guid: 28ba6f02725f4734896ca097f04b6622,
+    type: 3}
+  m_PrefabInstance: {fileID: 1193348111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2113112222
 GameObject:
   m_ObjectHideFlags: 0
