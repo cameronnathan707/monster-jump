@@ -24,6 +24,12 @@ public class Platform : MonoBehaviour
                 velocity.y = jumpForce;
                 rb.velocity = velocity;
                 SoundControlScript.PlaySound(type);
+                if (CompareTag("Coins"))
+                {
+                    SoundControlScript.PlaySound(type);
+                    tag.Replace("Coins", "untagged");
+                    type = "MainPatform";
+                }
             }
         }
     }

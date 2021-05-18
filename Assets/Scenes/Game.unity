@@ -2028,6 +2028,11 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 519420032}
+    - target: {fileID: 7958743961587535468, guid: 87bc266bf8c31974ea2df6c71d2d2a15,
+        type: 3}
+      propertyPath: m_TagString
+      value: Coins
+      objectReference: {fileID: 0}
     - target: {fileID: 8244740067529131951, guid: 87bc266bf8c31974ea2df6c71d2d2a15,
         type: 3}
       propertyPath: m_Name

@@ -34,7 +34,7 @@ public class SoundControlScript : MonoBehaviour
                 AudioSrc.PlayOneShot(CannonPatform);
                 break;
             case "CoinPlatform":
-                AudioSrc.PlayOneShot(CoinPlatform);
+                    AudioSrc.PlayOneShot(CoinPlatform);
                 break;
 
         }
