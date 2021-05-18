@@ -29,11 +29,11 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene("Game Over");
         }
-        spriteDirection();
-        wrap();
+        SpriteDirection();
+        Wrap();
     }
 
-    void spriteDirection()
+    void SpriteDirection()
     {
         
         if (movement < 0)
@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void wrap()
+    void Wrap()
     {
         if(playerTransform.position.x > EDGE_POS)
         {
