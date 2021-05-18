@@ -1252,7 +1252,7 @@ PrefabInstance:
     - target: {fileID: 4705749931730566973, guid: 89aa2a0922a617f40a7ff0267e804788,
         type: 3}
       propertyPath: type
-      value: Spring
+      value: SpringPatform
       objectReference: {fileID: 0}
     - target: {fileID: 4705749931730566973, guid: 89aa2a0922a617f40a7ff0267e804788,
         type: 3}
@@ -1927,7 +1927,7 @@ PrefabInstance:
     - target: {fileID: 4173752351614356565, guid: 288a96bb0edbfd74ea2eff7ab03723c8,
         type: 3}
       propertyPath: type
-      value: Cannon 1
+      value: CannonPatform
       objectReference: {fileID: 0}
     - target: {fileID: 4173752351614356565, guid: 288a96bb0edbfd74ea2eff7ab03723c8,
         type: 3}
@@ -2018,6 +2018,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Coins
       objectReference: {fileID: 0}
+    - target: {fileID: 6049811878843788715, guid: 87bc266bf8c31974ea2df6c71d2d2a15,
+        type: 3}
+      propertyPath: type
+      value: CoinPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 6049811878843788715, guid: 87bc266bf8c31974ea2df6c71d2d2a15,
+        type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 519420032}
     - target: {fileID: 8244740067529131951, guid: 87bc266bf8c31974ea2df6c71d2d2a15,
         type: 3}
       propertyPath: m_Name
