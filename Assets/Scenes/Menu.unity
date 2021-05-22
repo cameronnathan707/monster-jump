@@ -2909,7 +2909,7 @@ PrefabInstance:
     - target: {fileID: 2594866132614379984, guid: 28ba6f02725f4734896ca097f04b6622,
         type: 3}
       propertyPath: m_Name
-      value: Background Music
+      value: BackgroundMusic
       objectReference: {fileID: 0}
     - target: {fileID: 2594866132614379990, guid: 28ba6f02725f4734896ca097f04b6622,
         type: 3}
@@ -2979,7 +2979,7 @@ PrefabInstance:
     - target: {fileID: 2594866132614379991, guid: 28ba6f02725f4734896ca097f04b6622,
         type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ba6f02725f4734896ca097f04b6622, type: 3}

@@ -9,12 +9,12 @@ public class Platform : MonoBehaviour
 
     public Transform cameraTransform;
     public Transform platformTransform;
-    const float CAMERA_B_EDGE = 4.57f;
+    
 
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
+        Debug.Log(collision.relativeVelocity.y);
         if(collision.relativeVelocity.y <= 0f)
         {
             Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>();
@@ -30,7 +30,7 @@ public class Platform : MonoBehaviour
 
     void Update()
     {
-        if (platformTransform.position.y < cameraTransform.position.y - CAMERA_B_EDGE)
+        if (platformTransform.position.y < cameraTransform.position.y - Constants.CAMERA_B_EDGE)
         {
             Destroy(gameObject);
         }
