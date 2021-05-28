@@ -13,7 +13,6 @@ public class GameOver : MonoBehaviour
 
     public void Menu()
     {
-        Destroy(GameObject.Find("BackgroundMusic"));
         SceneManager.LoadScene(Constants.MENU_SCENE);
     }
 
