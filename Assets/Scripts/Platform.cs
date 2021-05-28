@@ -28,11 +28,9 @@ public class Platform : MonoBehaviour
         }
     }
 
-    void Update()
+
+    public float getJumpForce()
     {
-        if (platformTransform.position.y < cameraTransform.position.y - Constants.CAMERA_B_EDGE)
-        {
-            Destroy(gameObject);
-        }
+        return jumpForce;
     }
 }

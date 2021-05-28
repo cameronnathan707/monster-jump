@@ -195,6 +195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8324261982553617487, guid: 1aa0d2b5f31766a42b9f26e13c0e2cfc,
         type: 3}
+      propertyPath: masterLG
+      value: 
+      objectReference: {fileID: 89796600}
+    - target: {fileID: 8324261982553617487, guid: 1aa0d2b5f31766a42b9f26e13c0e2cfc,
+        type: 3}
       propertyPath: PlatformSound
       value: 
       objectReference: {fileID: 910171179}
@@ -236,13 +241,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainPatform: {fileID: 910171173}
   SpringPatform: {fileID: 1626581885}
-  CannonPatform: {fileID: 1824363122041756709}
+  CannonPlatform: {fileID: 1824363122041756709}
   CoinPlatform: {fileID: 1452716112}
-  numberOfPlatforms: 200
   levelWidth: 4
   minY: 0.5
   maxY: 1.5
   playerTransform: {fileID: 550857435}
+  cameraTransform: {fileID: 519420032}
+  spawnedPlatforms: []
+  count: 0
 --- !u!4 &89796601
 Transform:
   m_ObjectHideFlags: 0
@@ -1093,6 +1100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4705749931730566973, guid: 89aa2a0922a617f40a7ff0267e804788,
         type: 3}
+      propertyPath: masterLG
+      value: 
+      objectReference: {fileID: 89796600}
+    - target: {fileID: 4705749931730566973, guid: 89aa2a0922a617f40a7ff0267e804788,
+        type: 3}
       propertyPath: jumpForce
       value: 18
       objectReference: {fileID: 0}
@@ -1765,6 +1777,11 @@ PrefabInstance:
       propertyPath: type
       value: CannonPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 4173752351614356565, guid: 288a96bb0edbfd74ea2eff7ab03723c8,
+        type: 3}
+      propertyPath: masterLG
+      value: 
+      objectReference: {fileID: 89796600}
     - target: {fileID: 4173752351614356565, guid: 288a96bb0edbfd74ea2eff7ab03723c8,
         type: 3}
       propertyPath: jumpForce
