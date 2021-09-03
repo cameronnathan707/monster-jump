@@ -5,4 +5,4 @@
 1. Look at the releases and download the latest release as a .zip file
 2. Extract the .zip file
 3. Run the .exe 
-4. Now you can play the game
+4. Now you can play the game!
